@@ -1,13 +1,432 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+html {
+    scroll-behavior: smooth;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+    background-color: #111111;
+    height: 300vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+* {
+    font-family: 'Dosis', sans-serif;
+    color: #fff;
+    font-size: 16px;
+}
+
+
+/*basics*/
+
+ul,
+li {
+    padding: 0;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+
+/*Introduction - Page 1*/
+
+.introduction {
+    height: 100vh;
+    width: 100%;
+}
+
+.intro-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 75vw;
+    text-align: center;
+    cursor: default;
+}
+
+.top-name {
+    font-family: 'Nunito', sans-serif;
+    font-size: 40px;
+    font-weight: 300;
+    margin-bottom: -24px;
+}
+
+.intro-container>p,
+.main-text-emphasize {
+    font-family: 'Dosis', sans-serif;
+    font-weight: 300;
+}
+
+.main-text {
+    font-size: 32px;
+}
+
+.emphasize-love {
+    font-size: 32px;
+}
+
+.main-text-emphasize {
+    font-size: 32px;
+}
+
+.emphasize-love:hover+.main-text-emphasize {
+    text-decoration: underline;
+}
+
+.icon-container {
+    justify-content: center;
+    gap: 24px;
+}
+
+.contact-icons,
+.icon-size {
+    font-size: 32px;
+    color: #fff;
+}
+
+.contact-icons:hover {
+    transform: scale(1.1);
+}
+
+.arrow-down {
+    position: absolute;
+    left: 50%;
+    top: 90%;
+    transform: translate(-50%, -50%);
+}
+
+
+/*Intro 2 - Page 2*/
+
+#page-2 {
+    height: 100vh;
+}
+
+.p-container {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.p-1,
+.p-2 {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.p-1 {
+    font-size: 24px;
+}
+
+.p-2 {
+    font-size: 24px;
+}
+
+.page-2>.p-3 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 12px;
+    position: absolute;
+    left: 50%;
+    top: 188vh;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+}
+
+.icon-page2 {
+    font-size: 40px;
+}
+
+
+/*Page 3 - Projects*/
+
+#page-3 {
+    min-height: 100vh;
+}
+
+#page-3:hover .project-container>h3 {
+    background-color: rgb(255, 255, 255);
+}
+
+.project-container {
+    padding-top: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 32px;
+    padding-bottom: 64px;
+}
+
+.project-container>h3 {
+    text-align: center;
+    width: 15%;
+    font-size: 24px;
+    font-weight: 400;
+    padding: 8px;
+    border-radius: 3px;
+    background-color: #7e7e7e;
+    color: #000;
+}
+
+.project-container>h3:hover {
+    background-color: #ffffff;
+}
+
+.card {
+    width: 48%;
+    text-align: center;
+    padding: 10px;
+    border-radius: 4px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 2px solid rgba(255, 255, 255, 1);
+}
+
+.card:hover {
+    box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1);
+}
+
+.visit-info {
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    position: absolute;
+    left: 110%;
+    top: 50%;
+    min-width: 100px;
+}
+
+.card:hover .visit-info {
+    opacity: 1;
+}
+
+.card>hr {
+    height: 1px;
+}
+
+.project-name {
+    font-size: 20px;
+}
+
+
+/*GO TOP*/
+
+.top-btn {
+    position: fixed;
+    right: 2%;
+    top: 95%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.top-btn-size {
+    font-size: 24px;
+}
+
+
+/*Fade-in*/
+
+.fade-in {
+    -webkit-animation: fadein 2s;
+    -moz-animation: fadein 2s;
+    -ms-animation: fadein 2s;
+    -o-animation: fadein 2s;
+    animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+/*Blink*/
+
+.blink {
+    animation: blinker 2s linear infinite;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
+
+/*Responsiveness*/
+
+@media screen and (max-width: 1200px) {
+    .top-name {
+        font-size: 30px;
+        margin-bottom: -12px;
+    }
+    .main-text {
+        font-size: 20px;
+    }
+    .emphasize-love {
+        font-size: 20px;
+    }
+    .main-text-emphasize {
+        font-size: 20px;
+    }
+    .icon-container {
+        gap: 24px;
+    }
+    .contact-icons {
+        font-size: 20px;
+    }
+    /*page-2*/
+    .p-container {
+        gap: 16px;
+        height: 90vh;
+    }
+    .p-1 {
+        flex-direction: column;
+        width: 75%;
+        text-align: center;
+        font-size: 20px;
+    }
+    .p-2 {
+        flex-direction: column;
+        width: 75%;
+        text-align: center;
+        font-size: 20px;
+    }
+    .icon-page2 {
+        font-size: 24px;
+    }
+    .page-2>.p-3 {
+        font-size: 14px;
+        text-align: center;
+        top: 190vh;
+    }
+    .icon-size {
+        font-size: 20px;
+    }
+    /*Page-3*/
+    .card>a>p {
+        font-size: 14px;
+    }
+    .project-name {
+        font-size: 18px;
+    }
+    .project-container>h3 {
+        width: 25%;
+        font-size: 18px;
+        padding: 4px;
+        background-color: #fff;
+        color: #000;
+    }
+    /* disabling this effect for smaller screens */
+    .visit-info {
+        display: none;
+    }
+    .card:hover .visit-info {
+        opacity: 0;
+    }
+    .top-btn-size {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .top-name {
+        font-size: 24px;
+        margin-bottom: -12px;
+    }
+    .main-text {
+        font-size: 16px;
+    }
+    .emphasize-love {
+        font-size: 16px;
+    }
+    .main-text-emphasize {
+        font-size: 16px;
+    }
+    .icon-container {
+        gap: 24px;
+    }
+    .contact-icons {
+        font-size: 20px;
+    }
+    /*page-2*/
+    .p-container {
+        gap: 16px;
+        height: 90vh;
+    }
+    .p-1 {
+        flex-direction: column;
+        width: 75%;
+        text-align: center;
+        font-size: 16px;
+    }
+    .p-2 {
+        flex-direction: column;
+        width: 75%;
+        text-align: center;
+        font-size: 16px;
+    }
+    .icon-page2 {
+        font-size: 24px;
+    }
+    .page-2>.p-3 {
+        font-size: 12px;
+        text-align: center;
+    }
+    .icon-size {
+        font-size: 20px;
+    }
+    /*page-3*/
+    .card {
+        width: 64%;
+        text-align: center;
+        padding: 10px;
+        border-radius: 4px;
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 2px solid rgba(255, 255, 255, 1);
+    }
+    .card>a>p {
+        font-size: 12px;
+    }
+    .project-name {
+        font-size: 16px;
+    }
+    .project-container>h3 {
+        width: 35%;
+        font-size: 16px;
+        padding: 4px;
+        background-color: #fff;
+    }
+    /* disabling this effect for smaller screens */
+    .visit-info {
+        display: none;
+    }
+    .card:hover .visit-info {
+        opacity: 0;
+    }
 }
