@@ -63,7 +63,7 @@ a {
     font-family: 'Nunito', sans-serif;
     font-size: 40px;
     font-weight: 300;
-    margin-bottom: -24px;
+    margin-bottom: -36px;
 }
 
 .intro-container>p,
@@ -232,6 +232,7 @@ a {
 /*GO TOP*/
 
 .top-btn {
+    display: none;
     position: fixed;
     right: 2%;
     top: 95%;
@@ -282,7 +283,7 @@ a {
 @media screen and (max-width: 1200px) {
     .top-name {
         font-size: 30px;
-        margin-bottom: -12px;
+        margin-bottom: -24px;
     }
     .main-text {
         font-size: 20px;
@@ -356,7 +357,7 @@ a {
 @media screen and (max-width: 768px) {
     .top-name {
         font-size: 24px;
-        margin-bottom: -12px;
+        margin-bottom: -18px;
     }
     .main-text {
         font-size: 16px;

@@ -26,7 +26,7 @@ const ProjectList = [
     title: "Take a Note",
     url: "https://h-solak.github.io/notes-app/",
     description:
-      "A take a note app that is built with react.js. It also uses small piece of JSON code to store the notes! Plus, it has a searchbar that enables you to search the notes you've taken before.",
+      "A take a note app that is built with react.js. It also uses small piece of JSON code to store the notes! Plus, it has a searchbar that enables you to search through the notes you've taken before.",
     objectID: 3,
   },
   {
@@ -38,35 +38,35 @@ const ProjectList = [
   },
   {
     title: "Body-Mass Index Calculator",
-    url: "https://h-solak.github.io/body-mass-index-v1/",
+    url: "https://h-solak.github.io/body-mass-index/",
     description:
       "A Body-Mass-Index calculator. I actually built it for myself because I check my BMI everytime.",
     objectID: 5,
-  },
-  {
-    title: "Guess the Height Game",
-    url: "https://h-solak.github.io/guess-the-height/",
-    description:
-      "A simple game I made for a school project. The website generates divs with random heights and wants you to guess the height of them in pixels.",
-    objectID: 6,
   },
   {
     title: "Instagram UI Clone",
     url: "https://h-solak.github.io/instagram-ui-clone/",
     description:
       "Clone of the actual instagram website. Made with Bootstrap and it is responsive.",
-    objectID: 7,
+    objectID: 6,
   },
   {
     title: "LinkedIn UI Clone",
     url: "https://h-solak.github.io/linkedin-ui-clone/",
     description: "Responsive clone of the actual LinkedIn website.",
-    objectID: 8,
+    objectID: 7,
   },
   {
     title: "Google UI Clone",
     url: "https://h-solak.github.io/google-ui-clone/",
     description: "Clone of the actual Google website.",
+    objectID: 8,
+  },
+  {
+    title: "Guess the Height Game",
+    url: "https://h-solak.github.io/guess-the-height/",
+    description:
+      "A super simple game I made for a school project. The website generates divs with random heights and wants you to guess the height of them in pixels.",
     objectID: 9,
   },
 ];
