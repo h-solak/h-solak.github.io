@@ -58,12 +58,12 @@ function App() {
       <section id="page-2" className="page-2">
         <div className="p-container flex">
           <p className="p-1">
-            <FaReact className="icon-page2" /> I am currently learning React.js,
-            and I built this website with it.
+            <FaReact className="icon-page2" /> I am currently into React.js, I
+            built many websites with it including this one.
           </p>
           <p className="p-2">
-            <FaLaptopCode className="icon-page2" /> I have experience with HTML,
-            CSS, Javascript, Jquery, Bootstrap, and PHP.
+            <FaLaptopCode className="icon-page2" /> I have experience in CSS,
+            Bootstrap, Javascript, Jquery, React.js, Next.js and some PHP.
           </p>
         </div>
         <a href="#page-3" className="p-3">
