@@ -36,7 +36,8 @@ const Projects = () => {
           >
             <img
               src={project.image}
-              width={isXsScreen ? 200 : 340}
+              width={isXsScreen ? 200 : 300}
+              height={isXsScreen ? 100 : 150}
               style={{ objectFit: "cover", borderRadius: 8 }}
             />
             <Box display={"flex"} alignItems={"center"} gap={1}>

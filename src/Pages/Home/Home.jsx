@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import {
   Box,
   Button,
@@ -7,17 +7,22 @@ import {
   Typography,
   useMediaQuery,
 } from "@mui/material";
-import Layout from "../../Layout/Layout";
 import MyPic from "../../assets/images/me.jpg";
 import CodingDurationCounter from "./Components/CountupTimer";
 import TechStackList from "./Components/TechStackList";
 import Projects from "./Components/Projects";
 
 const Home = () => {
+  const isExtraXSScreen = useMediaQuery("(max-width:350px)");
   const isXsScreen = useMediaQuery("(max-width:600px)");
   return (
     <Box>
-      <Grid container marginTop={6} gap={2} alignItems={"center"}>
+      <Grid
+        container
+        marginTop={6}
+        gap={isExtraXSScreen ? 1 : 2}
+        alignItems={"center"}
+      >
         <Grid item>
           <img
             src={MyPic}
@@ -43,7 +48,7 @@ const Home = () => {
       {/* About Me */}
       <Grid container marginTop={6}>
         <Typography fontSize={18} fontWeight={600}>
-          ➡️ABOUT ME
+          ➡️ ABOUT ME
         </Typography>
         <Typography marginTop={1}>
           <li>
@@ -55,7 +60,7 @@ const Home = () => {
       {/* Counter */}
 
       <Grid container marginTop={4}>
-        And... I've been coding for almost:
+        <li>And... I've been coding for almost:</li>
         <CodingDurationCounter />
       </Grid>
 
@@ -63,7 +68,7 @@ const Home = () => {
       <Grid container marginTop={10}>
         <Grid item xs={12}>
           <Typography fontSize={18} fontWeight={600}>
-            ➡️MY TECH STACK
+            ➡️ MY TECH STACK
           </Typography>
         </Grid>
 
@@ -74,13 +79,17 @@ const Home = () => {
       <Grid container marginTop={10} id="projects">
         <Grid item xs={12}>
           <Typography fontSize={18} fontWeight={600}>
-            ➡️MY PROJECTS
+            ➡️ MY PROJECTS
           </Typography>
         </Grid>
 
         <Projects />
       </Grid>
 
+      <Typography textAlign={"center"} marginTop={10} color={"secondary"}>
+        You can always contact me via my email:{" "}
+        <Link href="mailto:hasan23solak@gmail.com">hasan23solak@gmail.com</Link>
+      </Typography>
       <Box sx={{ height: "20vh" }}></Box>
     </Box>
   );

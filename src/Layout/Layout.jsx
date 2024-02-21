@@ -5,13 +5,13 @@ import Navbar from "../Components/Navbar";
 const Layout = ({ children }) => {
   return (
     <Box
+      id="home"
       className="layout"
       sx={{
         width: "100vw",
         minHeight: "100vh",
         backgroundColor: "#ededed",
       }}
-      id="home"
     >
       <Navbar />
       <Grid container paddingX={4} paddingY={4} justifyContent={"center"}>

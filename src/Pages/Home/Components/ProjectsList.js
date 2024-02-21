@@ -58,7 +58,7 @@ const ProjectList = [
   },
   {
     id: 3,
-    title: "Youtube Downloader",
+    title: "Youtube Video Downloader",
     url: "https://h-solak.github.io/youtube-downloader/",
     image: YoutubeDownloaderProject,
     description:
@@ -67,7 +67,7 @@ const ProjectList = [
   },
   {
     id: 4,
-    title: "Rain Sounds",
+    title: "Rain Sounds Player",
     url: "https://h-solak.github.io/rain-sounds/",
     image: RainSoundProject,
     description: "A website to listen to relaxing rain sounds.",
@@ -123,15 +123,15 @@ const ProjectList = [
   //   description: "Clone of the actual Google website. (Not responsive yet)",
   //   tags: ["HTML", "CSS", "Bootstrap"],
   // },
-  {
-    id: 8,
-    title: "Color Generator",
-    url: "https://h-solak.github.io/hex-code-generator/",
-    image: HexGeneratorProject,
-    description:
-      "My first project... This website generates random colors by using it's own hex-code generator and sets it as the background color.",
-    tags: ["HTML", "CSS", "JS"],
-  },
+  // {
+  //   id: 8,
+  //   title: "Color Generator",
+  //   url: "https://h-solak.github.io/hex-code-generator/",
+  //   image: HexGeneratorProject,
+  //   description:
+  //     "My first project... This website generates random colors by using it's own hex-code generator and sets it as the background color.",
+  //   tags: ["HTML", "CSS", "JS"],
+  // },
   //   {
   //     id: 9,
   //     title: "Body-Mass Index Calculator",
