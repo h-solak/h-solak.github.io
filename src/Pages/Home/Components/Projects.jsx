@@ -4,13 +4,14 @@ import { Box, Grid, Tooltip, Typography, useMediaQuery } from "@mui/material";
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 
 const Projects = () => {
-  const isXsScreen = useMediaQuery("(max-width:600px)");
+  const isSmScreen = useMediaQuery("(max-width:900px)");
   const [showUrlIcon, setShowUrlIcon] = useState("");
 
   return (
-    <Grid marginTop={1} container gap={2} justifyContent={"space-between"}>
+    <Grid py={2} container spacing={4}>
       {ProjectList.map((project, index) => (
         <Tooltip
+          key={index}
           title={project.description}
           sx={{
             "& .MuiTooltip-tooltip": {
@@ -20,13 +21,14 @@ const Projects = () => {
               border: "1px solid #f50057",
             },
           }}
+          placement="top"
         >
           <Grid
-            key={index}
-            item
             gap={1}
+            item
+            xs={12}
+            md={6}
             sx={{
-              paddingY: 1,
               borderRadius: 4,
               cursor: "pointer",
             }}
@@ -36,12 +38,24 @@ const Projects = () => {
           >
             <img
               src={project.image}
-              width={isXsScreen ? 200 : 300}
-              height={isXsScreen ? 100 : 150}
-              style={{ objectFit: "cover", borderRadius: 8 }}
+              width={"100%"}
+              height={isSmScreen ? 200 : 150}
+              style={{
+                objectFit: "fill",
+                borderRadius: 8,
+                border: "3px solid #00000020",
+              }}
             />
             <Box display={"flex"} alignItems={"center"} gap={1}>
-              <Typography>{project.title}</Typography>
+              <Typography
+                sx={{
+                  transition: "0.1 ease",
+                  textDecoration:
+                    showUrlIcon == project.title ? "underline" : "none",
+                }}
+              >
+                {project.title}
+              </Typography>
               {showUrlIcon === project.title && <OpenInNewIcon fontSize="24" />}
             </Box>
           </Grid>

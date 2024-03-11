@@ -16,7 +16,12 @@ import ResumeIcon from "../assets/icons/resume.svg";
 import LaptopIcon from "../assets/icons/laptop.svg";
 const Navbar = () => {
   return (
-    <Box className="navbar">
+    <Box
+      className="navbar"
+      sx={{
+        zIndex: 99,
+      }}
+    >
       <Tooltip title="Home" placement="top">
         <a href="#home">
           <img

@@ -21,7 +21,7 @@ const techStackArr = [
     icon: TsIcon,
   },
   {
-    name: "React",
+    name: "React.js",
     icon: ReactIcon,
     width: 18,
   },
@@ -75,7 +75,11 @@ const TechStackList = () => {
             border: "2px solid #00000010",
           }}
         >
-          <img src={stack.icon} width={stack.width ? stack.width : 16} />
+          <img
+            className={`${stack.name == "React.js" ? "rotate" : ""}`}
+            src={stack.icon}
+            width={stack.width ? stack.width : 16}
+          />
           <Typography fontSize={14}>{stack.name}</Typography>
         </Grid>
       ))}
