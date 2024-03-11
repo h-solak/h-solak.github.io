@@ -67,7 +67,12 @@ const Home = () => {
       {/* About Me */}
       <Grid container marginTop={6}>
         <Typography fontSize={20}>👋 Hey , I am Hasan. I am...</Typography>{" "}
-        <Box marginTop={1} display={"flex"} flexDirection={"column"}>
+        <Box
+          marginTop={1}
+          display={"flex"}
+          flexDirection={"column"}
+          width={"100%"}
+        >
           <Typography>
             🧑🏻‍💻 a dedicated full-stack developer who finds joy in the art of
             coding
