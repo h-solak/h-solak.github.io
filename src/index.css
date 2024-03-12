@@ -15,6 +15,11 @@ body {
   overflow-x: hidden;
 }
 
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
 .layout {
   /* background: url("https://image-aws-us-west-2.vsco.co/6b3a87/237518352/624a231b5637f65a7d000001/vsco624a23282e5e8.jpg"); */
   background: linear-gradient(
@@ -113,6 +118,6 @@ body {
     padding: 0 32px;
     background-color: rgba(247, 246, 255, 0.85);
     border-radius: 0px;
-    bottom: -28px;
+    bottom: -28px; /*Hard coded*/
   }
 }
