@@ -51,7 +51,7 @@ const Projects = () => {
                 height={isSmScreen ? 200 : 150}
                 style={{
                   objectFit: "fill",
-                  borderRadius: 8,
+                  borderRadius: 16,
                   border: "3px solid #00000020",
                 }}
               />
