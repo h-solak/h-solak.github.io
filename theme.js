@@ -7,7 +7,7 @@ https://colorhunt.co/palette/4a55a27895cba0bfe0c5dff8
 const theme = createTheme({
   palette: {
     primary: {
-      main: "#5758BB",
+      main: "#0077B5",
       light: "#3D2C8D",
     },
     secondary: {

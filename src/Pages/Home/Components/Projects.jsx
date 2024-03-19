@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { ProjectList } from "./ProjectsList";
 import {
   Box,
+  Button,
   Grid,
   Link,
   Tooltip,
@@ -9,27 +10,19 @@ import {
   useMediaQuery,
 } from "@mui/material";
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
+import BaseModal from "../../../Components/Modal";
+import { techStackArr } from "./TechStackList";
 
 const Projects = () => {
+  const isExtraXsScreen = useMediaQuery("(max-width:400px)"); //for link bug (on top of image)
   const isSmScreen = useMediaQuery("(max-width:900px)");
   const [showUrlIcon, setShowUrlIcon] = useState("");
+  const [projectModal, setProjectModal] = useState(-1);
 
   return (
     <Grid py={2} container spacing={4}>
       {ProjectList.map((project, index) => (
-        <Tooltip
-          key={index}
-          title={project.description}
-          sx={{
-            "& .MuiTooltip-tooltip": {
-              backgroundColor: "#fff",
-              color: "white",
-              fontSize: "12px",
-              border: "1px solid #f50057",
-            },
-          }}
-          placement="top"
-        >
+        <React.Fragment key={index}>
           <Grid
             gap={1}
             item
@@ -42,9 +35,10 @@ const Projects = () => {
             // onClick={() => window.open(project.url, "_blank")}
             onMouseEnter={() => setShowUrlIcon(project.title)}
             onMouseLeave={() => setShowUrlIcon("")}
+            onClick={() => setProjectModal(project.id)}
           >
             <Link
-              href={project.url}
+              // href={project.url}
               target="_blank"
               sx={{
                 color: "inherit",
@@ -71,13 +65,92 @@ const Projects = () => {
                 >
                   {project.title}
                 </Typography>
-                {showUrlIcon === project.title && (
+                {/*
+                 {showUrlIcon === project.title && (
                   <OpenInNewIcon fontSize="24" />
                 )}
+                */}
               </Box>
             </Link>
           </Grid>
-        </Tooltip>
+          <BaseModal
+            isModalOpen={projectModal == project.id}
+            setIsModalOpen={setProjectModal}
+            title={project.title}
+            contentPadding={0}
+          >
+            <Grid item>
+              <Box
+                sx={{
+                  position: "relative",
+                }}
+              >
+                <img
+                  src={project.image}
+                  width={"100%"}
+                  height={isSmScreen ? "auto" : 250}
+                  style={{
+                    objectFit: "cover",
+                    borderRadius: 8,
+                    border: "3px solid #00000020",
+                  }}
+                />
+                <div
+                  style={{
+                    position: "absolute",
+                    top: 0,
+                    left: 0,
+                    width: "100%",
+                    height: "calc(100% - 10px)",
+                    backgroundImage:
+                      "linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4))",
+                  }}
+                ></div>
+                <Link
+                  href={project.url}
+                  target={"_blank"}
+                  sx={{
+                    position: "absolute",
+                    bottom: "10%",
+                    left: isExtraXsScreen ? "0%" : "4%",
+                  }}
+                >
+                  <Button variant="contained">Link</Button>
+                </Link>
+              </Box>
+              <Typography mt={2} px={3}>
+                {project.description}
+              </Typography>
+
+              <Grid container pt={2} pb={3} px={3} spacing={2}>
+                {project.tags.map((tag, index) => {
+                  const stack = techStackArr.find((item) => item.name == tag);
+                  return (
+                    <Grid key={index} item>
+                      <Box
+                        display={"flex"}
+                        alignItems={"center"}
+                        gap={1}
+                        sx={{
+                          backgroundColor: "#00000010",
+                          paddingY: 1,
+                          paddingX: 1,
+                          borderRadius: 4,
+                          border: "2px solid #00000010",
+                        }}
+                      >
+                        {stack?.icon && (
+                          <img src={stack?.icon} width={stack?.width} />
+                        )}
+                        <Typography fontSize={14}>{tag}</Typography>
+                      </Box>
+                    </Grid>
+                  );
+                })}
+              </Grid>
+            </Grid>
+          </BaseModal>
+        </React.Fragment>
       ))}
     </Grid>
   );

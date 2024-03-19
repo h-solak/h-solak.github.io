@@ -12,6 +12,7 @@ import HexGeneratorProject from "../../../assets/images/projectImages/hexgenerat
 import BmiCalculator from "../../../assets/images/projectImages/bmicalculator.png";
 import SociableCat from "../../../assets/images/projectImages/sociablecat.png";
 import SpotifyPlaylistShuffler from "../../../assets/images/projectImages/spotifyplaylistshuffler.png";
+import Tunemix from "../../../assets/images/projectImages/tunemix.png";
 const ProjectImages = [
   SociableCat,
   NotesAppProject,
@@ -31,24 +32,33 @@ const ProjectImages = [
 const ProjectList = [
   {
     id: 0,
-    title: "Social Media",
-    url: "https://sociablecat.online",
-    image: SociableCat,
+    title: "Tunemix - Playlist Generator",
+    url: "https://github.com/h-solak/mis-463-project",
+    image: Tunemix,
     description:
-      "A social media website that is connected to a restful API that I built. You can share posts, chat with people, and follow them.",
-    tags: ["Node.js", "Express.js", "MongoDB", "React.js", "Redux"],
+      "A full-stack website that generates spotify playlists for businesses such as Cafés, Bars, or Clubs. This was a school project I built with a team. It runs a Python script on the backend side. I coded frontend and backend (using Node.js & MongoDB) of the website.",
+    tags: ["Node.js", "MongoDB", "React.js", "Material UI"],
   },
   {
     id: 1,
+    title: "Social Media",
+    url: "https://github.com/h-solak/social-media",
+    image: SociableCat,
+    description:
+      "A social media website connected to a restful API that I built. It, surely, resembles facebook :) You can share posts, chat with people, and follow them. It also has a feed that contains friend's posts, friend suggestions, and so on...",
+    tags: ["Node.js", "Express.js", "MongoDB", "React.js", "Redux"],
+  },
+  {
+    id: 2,
     title: "Notes App",
     url: "https://github.com/h-solak/notesApp",
     image: NotesAppProject,
     description:
       "A mobile take-a-note app that allows you to take a note, add some tasks with its calendar feature.",
-    tags: ["React Native", "Tailwind"],
+    tags: ["React Native", "Redux", "Tailwind CSS"],
   },
   {
-    id: 2,
+    id: 3,
     title: "Movie Finder",
     url: "https://h-solak.github.io/movie-finder/",
     image: MovieProject,
@@ -57,7 +67,7 @@ const ProjectList = [
     tags: ["React.js", "Axios", "CSS"],
   },
   {
-    id: 3,
+    id: 4,
     title: "Youtube Video Downloader",
     url: "https://h-solak.github.io/youtube-downloader/",
     image: YoutubeDownloaderProject,
@@ -66,7 +76,7 @@ const ProjectList = [
     tags: ["React.js", "Axios", "RapidAPI"],
   },
   {
-    id: 4,
+    id: 5,
     title: "Rain Sounds Player",
     url: "https://h-solak.github.io/rain-sounds/",
     image: RainSoundProject,
@@ -75,7 +85,7 @@ const ProjectList = [
   },
 
   {
-    id: 5,
+    id: 6,
     title: "Twitter Video Downloader",
     url: "https://h-solak.github.io/twitter-video-downloader/",
     image: TwitterVideoDownloaderProject,
@@ -84,28 +94,29 @@ const ProjectList = [
   },
 
   {
-    id: 6,
+    id: 7,
     title: "Spotify Playlist Shuffler",
     url: "https://spotify-playlist-shuffler.netlify.app",
     image: SpotifyPlaylistShuffler,
-    description: "This website uses Spotify API to shuffle users' playlist",
+    description:
+      "This website uses Spotify API to shuffle user's playlists. You can't login due to Spotify not letting me use their api without limits :(",
     tags: ["React.js", "Material UI"],
   },
   {
-    id: 7,
+    id: 8,
     title: "GPA Calculator",
     url: "https://h-solak.github.io/gpa-calculator/",
     image: GpaCalculator,
     description: "A website to easily calculate your GPA.",
-    tags: ["React.js", "CSS"],
+    tags: ["React.js", "Css"],
   },
   {
-    id: 8,
+    id: 9,
     title: "LinkedIn UI Clone",
     url: "https://h-solak.github.io/linkedin-ui-clone/",
     image: LinkedinCloneProject,
     description: "Responsive clone of the actual LinkedIn website.",
-    tags: ["HTML", "CSS", "Bootstrap"],
+    tags: ["Html", "Css", "Bootstrap"],
   },
   // {
   //   id: 8,

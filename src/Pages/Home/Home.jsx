@@ -8,7 +8,7 @@ import {
   Typography,
   useMediaQuery,
 } from "@mui/material";
-import MyPic from "../../assets/images/me.png";
+import MyPic from "../../assets/images/me.jpeg";
 import ReactIcon from "../../assets/icons/techStack/react.svg";
 import CodingDurationCounter from "./Components/CountupTimer";
 import TechStackList from "./Components/TechStackList";
@@ -30,7 +30,10 @@ const Home = () => {
             src={MyPic}
             width={isXsScreen ? 96 : 108}
             height={isXsScreen ? 96 : 108}
-            style={{ borderRadius: 99, objectFit: "cover" }}
+            style={{
+              borderRadius: 99,
+              objectFit: "cover",
+            }}
           />
         </Grid>
         <Grid item>
@@ -114,6 +117,9 @@ const Home = () => {
         <Grid item xs={12}>
           <Typography fontSize={18} fontWeight={600}>
             ➡️ MY PROJECTS
+          </Typography>
+          <Typography color={"secondary"} fontSize={14} fontWeight={500}>
+            Click on the projects for more details.
           </Typography>
         </Grid>
         <Projects />

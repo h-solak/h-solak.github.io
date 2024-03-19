@@ -10,15 +10,18 @@ import MaterialUiIcon from "../../../assets/icons/techStack/materialui.svg";
 import NodejsIcon from "../../../assets/icons/techStack/nodejs.svg";
 import MongodbIcon from "../../../assets/icons/techStack/mongodb.svg";
 import ReactNativeIcon from "../../../assets/icons/techStack/reactnative.svg";
+import SocketIcon from "../../../assets/icons/techStack/socket.svg";
 
-const techStackArr = [
+export const techStackArr = [
   {
     name: "Javascript",
     icon: JsIcon,
+    width: 16,
   },
   {
     name: "Typescript",
     icon: TsIcon,
+    width: 16,
   },
   {
     name: "React.js",
@@ -28,6 +31,7 @@ const techStackArr = [
   {
     name: "Redux",
     icon: ReduxIcon,
+    width: 16,
   },
   {
     name: "Tailwind CSS",
@@ -52,6 +56,11 @@ const techStackArr = [
   {
     name: "React Native",
     icon: ReactNativeIcon,
+    width: 18,
+  },
+  {
+    name: "Web Socket",
+    icon: SocketIcon,
     width: 18,
   },
 ];
