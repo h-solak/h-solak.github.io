@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Box,
   Grid,
@@ -15,6 +15,7 @@ import GithubIcon from "../assets/icons/github.svg";
 import ResumeIcon from "../assets/icons/resume.svg";
 import LaptopIcon from "../assets/icons/laptop.svg";
 const Navbar = () => {
+  const [hoveredIcon, setHoveredIcon] = useState("");
   return (
     <Box
       className="navbar"
@@ -22,159 +23,151 @@ const Navbar = () => {
         zIndex: 99,
       }}
     >
-      <Tooltip title="Home" placement="top">
-        <a
-          href="#home"
-          style={{
-            position: "relative",
+      <a
+        href="#home"
+        style={{
+          position: "relative",
+        }}
+        onMouseEnter={() => setHoveredIcon("home")}
+        onMouseLeave={() => setHoveredIcon("")}
+      >
+        <img className="navbar-icon" src={HomeIcon} width={24} height={24} />
+        <Typography
+          fontSize={10}
+          fontWeight={500}
+          sx={{
+            position: "absolute",
+            bottom: -7,
+            left: -1,
           }}
         >
-          <img
-            className="navbar-icon"
-            src={HomeIcon}
-            width={24}
-            height={24}
-            //marginBottom -6 is a temporary fix
-          />
-          <Typography
-            fontSize={10}
-            fontWeight={500}
-            sx={{
-              position: "absolute",
-              bottom: -7,
-              left: -1,
-            }}
-          >
-            Home
-          </Typography>
-        </a>
-      </Tooltip>
-      <Tooltip title="Projects" placement="top">
-        <a
-          href="#projects"
-          style={{
-            position: "relative",
+          Home
+        </Typography>
+      </a>
+      <a
+        href="#projects"
+        style={{
+          position: "relative",
+        }}
+        onMouseEnter={() => setHoveredIcon("projects")}
+        onMouseLeave={() => setHoveredIcon("")}
+      >
+        <img
+          src={LaptopIcon}
+          className="navbar-icon"
+          width={28}
+          height={28}
+          style={{ marginBottom: 0 }}
+        />
+        <Typography
+          fontSize={10}
+          fontWeight={500}
+          sx={{
+            position: "absolute",
+            bottom: -5,
+            left: -4,
+            textAlign: "start",
           }}
         >
-          <img
-            src={LaptopIcon}
-            className="navbar-icon"
-            width={28}
-            height={28}
-            style={{ marginBottom: 0 }}
-            //marginBottom -6 is a temporary fix
-          />
-          <Typography
-            fontSize={10}
-            fontWeight={500}
-            sx={{
-              position: "absolute",
-              bottom: -5,
-              left: -4,
-              textAlign: "start",
-            }}
-          >
-            Projects
-          </Typography>
-        </a>
-      </Tooltip>
-      {/*
-        <div
+          Projects
+        </Typography>
+      </a>
+      {/* 
+      <div
         style={{
           height: "calc(100% - 15px)",
           width: "2px",
           backgroundColor: "#000",
           opacity: 0.2,
         }}
-      ></div>
-        */}
-      <Tooltip title="Linkedin" placement="top">
-        <a
-          href="https://www.linkedin.com/in/hasansolak/"
-          target="_blank"
-          style={{
-            position: "relative",
+      ></div> */}
+
+      <a
+        href="https://www.linkedin.com/in/hasansolak/"
+        target="_blank"
+        style={{
+          position: "relative",
+        }}
+        onMouseEnter={() => setHoveredIcon("linkedin")}
+        onMouseLeave={() => setHoveredIcon("")}
+      >
+        <img
+          className="navbar-icon"
+          src={LinkedinIcon}
+          width={30}
+          height={30}
+          style={{ marginBottom: -1 }}
+        />
+        <Typography
+          fontSize={10}
+          fontWeight={500}
+          sx={{
+            position: "absolute",
+            bottom: -5,
+            left: -4,
+            textAlign: "start",
           }}
         >
-          <img
-            className="navbar-icon"
-            src={LinkedinIcon}
-            width={30}
-            height={30}
-            style={{ marginBottom: -1 }}
-          />
-          <Typography
-            fontSize={10}
-            fontWeight={500}
-            sx={{
-              position: "absolute",
-              bottom: -5,
-              left: -4,
-              textAlign: "start",
-            }}
-          >
-            Linkedin
-          </Typography>
-        </a>
-      </Tooltip>
-      <Tooltip title="Github" placement="top">
-        <a
-          href="https://github.com/h-solak"
-          target="_blank"
-          style={{
-            position: "relative",
+          Linkedin
+        </Typography>
+      </a>
+
+      <a
+        href="https://github.com/h-solak"
+        target="_blank"
+        style={{
+          position: "relative",
+        }}
+        onMouseEnter={() => setHoveredIcon("github")}
+        onMouseLeave={() => setHoveredIcon("")}
+      >
+        <img
+          className="navbar-icon"
+          src={GithubIcon}
+          width={24}
+          height={24}
+          style={{ marginBottom: -1 }}
+        />
+        <Typography
+          fontSize={10}
+          sx={{
+            position: "absolute",
+            bottom: -8,
+            left: -4,
+            textAlign: "start",
           }}
         >
-          <img
-            className="navbar-icon"
-            src={GithubIcon}
-            width={24}
-            height={24}
-            style={{ marginBottom: -1 }}
-          />
-          <Typography
-            fontSize={10}
-            fontWeight={500}
-            sx={{
-              position: "absolute",
-              bottom: -8,
-              left: -4,
-              textAlign: "start",
-            }}
-          >
-            Github
-          </Typography>
-        </a>
-      </Tooltip>
-      <Tooltip title="Resume/CV" placement="top">
-        <a
-          href={Resume}
-          target="_blank"
-          style={{
-            position: "relative",
+          Github
+        </Typography>
+      </a>
+      <a
+        href={Resume}
+        target="_blank"
+        style={{
+          position: "relative",
+        }}
+        onMouseEnter={() => setHoveredIcon("cv")}
+        onMouseLeave={() => setHoveredIcon("")}
+      >
+        <img
+          className="navbar-icon"
+          src={ResumeIcon}
+          width={28}
+          height={28}
+          style={{ marginBottom: 1 }}
+        />
+        <Typography
+          fontSize={10}
+          sx={{
+            position: "absolute",
+            bottom: -5,
+            left: 6,
+            textAlign: "start",
           }}
         >
-          <img
-            className="navbar-icon"
-            src={ResumeIcon}
-            width={28}
-            height={28}
-            style={{ marginBottom: 1 }}
-          />
-          <Typography
-            fontSize={10}
-            fontWeight={500}
-            sx={{
-              position: "absolute",
-              bottom: -5,
-              left: 6,
-              textAlign: "start",
-            }}
-          >
-            CV
-          </Typography>
-        </a>
-      </Tooltip>
+          CV
+        </Typography>
+      </a>
     </Box>
   );
 };

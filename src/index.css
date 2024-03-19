@@ -38,25 +38,26 @@ a {
   left: 50%;
   transform: translate(-50%, -50%);
   height: 54px;
-  width: 320px;
+  width: 350px;
   border-radius: 99px;
   padding: 0px 24px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   border-radius: 16px;
-  background: rgba(255, 255, 255, 0.75);
+  background: rgba(255, 255, 255, 1);
   border-radius: 16px;
   backdrop-filter: blur(25px);
   -webkit-backdrop-filter: blur(25px);
-  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
-    rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
+    rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
 }
 
 .navbar-icon {
   color: #fff;
   transition: 0.1s ease;
   cursor: pointer;
+  border-radius: 99%;
 }
 
 .navbar-icon:hover {
@@ -125,7 +126,7 @@ a {
     width: 100%;
     padding: 0 32px;
     background-color: rgba(247, 246, 255, 0.85);
-    border-radius: 0px;
+    border-radius: 16px 16px 0px 0px;
     bottom: -28px; /*Hard coded*/
   }
 }

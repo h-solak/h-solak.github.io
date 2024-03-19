@@ -12,6 +12,7 @@ import {
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 import BaseModal from "../../../Components/Modal";
 import { techStackArr } from "./TechStackList";
+import { GitHub } from "@mui/icons-material";
 
 const Projects = () => {
   const isExtraXsScreen = useMediaQuery("(max-width:400px)"); //for link bug (on top of image)
@@ -91,7 +92,6 @@ const Projects = () => {
                   height={isSmScreen ? "auto" : 250}
                   style={{
                     objectFit: "cover",
-                    borderRadius: 8,
                     border: "3px solid #00000020",
                   }}
                 />
@@ -115,26 +115,38 @@ const Projects = () => {
                     left: isExtraXsScreen ? "0%" : "4%",
                   }}
                 >
-                  <Button variant="contained">Link</Button>
+                  <Button variant="contained" sx={{}} startIcon={<GitHub />}>
+                    Link
+                  </Button>
                 </Link>
               </Box>
-              <Typography mt={2} px={3}>
+              <Typography mt={1} px={3}>
                 {project.description}
               </Typography>
 
-              <Grid container pt={2} pb={3} px={3} spacing={2}>
-                {project.tags.map((tag, index) => {
+              <Grid
+                container
+                mt={0}
+                mb={3}
+                px={2}
+                spacing={2}
+                sx={{
+                  width: "100%",
+                }}
+              >
+                {project.tags.map((tag) => {
                   const stack = techStackArr.find((item) => item.name == tag);
                   return (
-                    <Grid key={index} item>
+                    <Grid key={tag} item>
                       <Box
                         display={"flex"}
+                        justifyContent={"center"}
                         alignItems={"center"}
                         gap={1}
                         sx={{
                           backgroundColor: "#00000010",
                           paddingY: 1,
-                          paddingX: 1,
+                          paddingX: 2,
                           borderRadius: 4,
                           border: "2px solid #00000010",
                         }}

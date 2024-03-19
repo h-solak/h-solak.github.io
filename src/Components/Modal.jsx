@@ -35,6 +35,7 @@ const BaseModal = ({
         sx={{
           backgroundColor: "#fff",
           width: isSmScreen ? "100%" : "auto",
+          outline: "none",
           ...sx,
         }}
         {...props}

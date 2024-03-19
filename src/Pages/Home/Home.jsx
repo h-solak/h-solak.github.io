@@ -24,7 +24,7 @@ const Home = () => {
   const isXsScreen = useMediaQuery("(max-width:600px)");
   return (
     <Box className="fade-in-from-bottom">
-      <Grid container marginTop={6} gap={1.2} alignItems={"center"}>
+      <Grid container marginTop={4} gap={1.2} alignItems={"center"}>
         <Grid item>
           <img
             src={MyPic}
@@ -54,13 +54,15 @@ const Home = () => {
                   textDecoration: "none",
                 }}
               >
-                <Box display={"flex"} alignItems={"center"} gap={0.25}>
+                <Box display={"flex"} alignItems={"center"} gap={0.4}>
                   <Mail
                     sx={{
                       fontSize: 18,
                     }}
                   />
-                  hasan23solak@gmail.com
+                  <Typography fontWeight={500}>
+                    hasan23solak@gmail.com
+                  </Typography>
                 </Box>
               </Link>
             </Tooltip>
@@ -69,7 +71,7 @@ const Home = () => {
       </Grid>
       {/* About Me */}
       <Grid container marginTop={6}>
-        <Typography fontSize={20}>👋 Hey , I am Hasan. I am...</Typography>{" "}
+        <Typography fontSize={20}>👋 Hey, I am Hasan. I am...</Typography>{" "}
         <Box
           marginTop={1}
           display={"flex"}

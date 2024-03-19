@@ -36,7 +36,7 @@ const ProjectList = [
     url: "https://github.com/h-solak/mis-463-project",
     image: Tunemix,
     description:
-      "A full-stack website that generates spotify playlists for businesses such as Cafés, Bars, or Clubs. This was a school project I built with a team. It runs a Python script on the backend side. I coded frontend and backend (using Node.js & MongoDB) of the website.",
+      "A full-stack website that generates spotify playlists for businesses such as Cafés, Bars, or Clubs. This was a school project I built with a team. It runs a Python script on the backend side. I coded frontend and backend of the website.",
     tags: ["Node.js", "MongoDB", "React.js", "Material UI"],
   },
   {
