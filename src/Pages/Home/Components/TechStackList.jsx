@@ -11,6 +11,8 @@ import NodejsIcon from "../../../assets/icons/techStack/nodejs.svg";
 import MongodbIcon from "../../../assets/icons/techStack/mongodb.svg";
 import ReactNativeIcon from "../../../assets/icons/techStack/reactnative.svg";
 import SocketIcon from "../../../assets/icons/techStack/socket.svg";
+import FirebaseIcon from "../../../assets/icons/techStack/firebase.svg";
+import NextJsIcon from "../../../assets/icons/techStack/next.svg";
 
 export const techStackArr = [
   {
@@ -26,6 +28,11 @@ export const techStackArr = [
   {
     name: "React.js",
     icon: ReactIcon,
+    width: 18,
+  },
+  {
+    name: "Next.js",
+    icon: NextJsIcon,
     width: 18,
   },
   {
@@ -51,6 +58,11 @@ export const techStackArr = [
   {
     name: "MongoDB",
     icon: MongodbIcon,
+    width: 18,
+  },
+  {
+    name: "Firebase",
+    icon: FirebaseIcon,
     width: 18,
   },
   {

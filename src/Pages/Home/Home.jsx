@@ -115,7 +115,7 @@ const Home = () => {
       </Grid>
 
       {/* Projects */}
-      <Grid container marginTop={10} id="projects">
+      <Grid container mt={5} pt={5} id="projects">
         <Grid item xs={12}>
           <Typography fontSize={18} fontWeight={600}>
             ➡️ MY PROJECTS
