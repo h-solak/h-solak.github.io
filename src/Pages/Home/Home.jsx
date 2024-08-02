@@ -79,19 +79,20 @@ const Home = () => {
           width={"100%"}
         >
           <Typography>
-            🧑🏻‍💻 a dedicated full-stack developer who finds joy in the art of
+            🧑🏻‍💻 a dedicated front-end developer who finds joy in the art of
             coding
           </Typography>
           <Typography>
-            🎓 a senior{" "}
+            🎓 graduated from Boğaziçi University{" "}
             <Tooltip title="Management Information Systems">
-              <Typography variant="span">MIS</Typography>
+              <Typography variant="span">MIS department</Typography>
             </Tooltip>{" "}
-            student at Boğaziçi University
           </Typography>
           <Typography>
-            💼 currently looking for a job,{" "}
-            <Link href="mailto:hasan23solak@gmail.com">hire me?</Link>
+            💼{" "}
+            <Link href="mailto:hasan23solak@gmail.com">
+              do you want to hire me?
+            </Link>
           </Typography>
           {/*<br /> <img className={``} src={ReactIcon} width={16} /> I focus on React.js.{" "} */}
         </Box>

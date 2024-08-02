@@ -13,6 +13,7 @@ import BmiCalculator from "../../../assets/images/projectImages/bmicalculator.pn
 import SociableCat from "../../../assets/images/projectImages/sociablecat.png";
 import SpotifyPlaylistShuffler from "../../../assets/images/projectImages/spotifyplaylistshuffler.png";
 import Tunemix from "../../../assets/images/projectImages/tunemix.png";
+import Moviemate from "../../../assets/images/projectImages/moviemate.png";
 const ProjectImages = [
   SociableCat,
   NotesAppProject,
@@ -32,6 +33,15 @@ const ProjectImages = [
 const ProjectList = [
   {
     id: 0,
+    title: "Moviemate",
+    url: "https://github.com/h-solak/mis-492-project",
+    image: Moviemate,
+    description:
+      "A full-stack website that matches you with people with similar movie tastes. You can follow other people, review & rate movies, start a chat with your friends. ",
+    tags: ["Node.js", "MongoDB", "React.js", "Material UI", "Web Socket"],
+  },
+  {
+    id: 1,
     title: "Tunemix - Playlist Generator",
     url: "https://github.com/h-solak/mis-463-project",
     image: Tunemix,
@@ -40,7 +50,7 @@ const ProjectList = [
     tags: ["Node.js", "MongoDB", "React.js", "Material UI"],
   },
   {
-    id: 1,
+    id: 2,
     title: "Social Media",
     url: "https://github.com/h-solak/social-media",
     image: SociableCat,
@@ -49,7 +59,7 @@ const ProjectList = [
     tags: ["Node.js", "Express.js", "MongoDB", "React.js", "Redux"],
   },
   {
-    id: 2,
+    id: 3,
     title: "Notes App",
     url: "https://github.com/h-solak/notesApp",
     image: NotesAppProject,
@@ -58,7 +68,7 @@ const ProjectList = [
     tags: ["React Native", "Redux", "Tailwind CSS"],
   },
   {
-    id: 3,
+    id: 4,
     title: "Movie Finder",
     url: "https://h-solak.github.io/movie-finder/",
     image: MovieProject,
@@ -67,7 +77,7 @@ const ProjectList = [
     tags: ["React.js", "Axios", "CSS"],
   },
   {
-    id: 4,
+    id: 5,
     title: "Youtube Video Downloader",
     url: "https://h-solak.github.io/youtube-downloader/",
     image: YoutubeDownloaderProject,
@@ -76,7 +86,7 @@ const ProjectList = [
     tags: ["React.js", "Axios", "RapidAPI"],
   },
   {
-    id: 5,
+    id: 6,
     title: "Rain Sounds Player",
     url: "https://h-solak.github.io/rain-sounds/",
     image: RainSoundProject,
@@ -85,7 +95,7 @@ const ProjectList = [
   },
 
   {
-    id: 6,
+    id: 7,
     title: "Twitter Video Downloader",
     url: "https://h-solak.github.io/twitter-video-downloader/",
     image: TwitterVideoDownloaderProject,
@@ -94,7 +104,7 @@ const ProjectList = [
   },
 
   {
-    id: 7,
+    id: 8,
     title: "Spotify Playlist Shuffler",
     url: "https://spotify-playlist-shuffler.netlify.app",
     image: SpotifyPlaylistShuffler,
@@ -103,7 +113,7 @@ const ProjectList = [
     tags: ["React.js", "Material UI"],
   },
   {
-    id: 8,
+    id: 9,
     title: "GPA Calculator",
     url: "https://h-solak.github.io/gpa-calculator/",
     image: GpaCalculator,
@@ -111,7 +121,7 @@ const ProjectList = [
     tags: ["React.js", "Css"],
   },
   {
-    id: 9,
+    id: 10,
     title: "LinkedIn UI Clone",
     url: "https://h-solak.github.io/linkedin-ui-clone/",
     image: LinkedinCloneProject,
