@@ -83,15 +83,15 @@ const Home = () => {
             coding
           </Typography>
           <Typography>
-            🎓 graduated from Boğaziçi University{" "}
+            🎓 a graduate of Boğaziçi University with a major in{" "}
             <Tooltip title="Management Information Systems">
-              <Typography variant="span">MIS department</Typography>
+              <Typography variant="span">MIS</Typography>
             </Tooltip>{" "}
           </Typography>
           <Typography>
             💼{" "}
             <Link href="mailto:hasan23solak@gmail.com">
-              do you want to hire me?
+              probably available if you want to hire me
             </Link>
           </Typography>
           {/*<br /> <img className={``} src={ReactIcon} width={16} /> I focus on React.js.{" "} */}
