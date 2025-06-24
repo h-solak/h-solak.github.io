@@ -12,7 +12,8 @@ const theme = createTheme({
     },
     secondary: {
       //grey(ish)
-      main: "#999999",
+      main: "#627285",
+      light: "#62728550",
     },
     highlight: {
       //accent color - call to action (cta)

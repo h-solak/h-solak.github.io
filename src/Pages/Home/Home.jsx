@@ -18,6 +18,7 @@ import {
   MailOutlineSharp,
   MailOutlineTwoTone,
 } from "@mui/icons-material";
+import { Experience } from "./Components/Experience";
 
 const Home = () => {
   const isExtraXSScreen = useMediaQuery("(max-width:350px)");
@@ -103,6 +104,18 @@ const Home = () => {
         My journey in coding has been continuing non-stop for:
         <CodingDurationCounter />
       </Grid>
+
+      {/* My experience */}
+      <Grid container marginTop={10}>
+        <Grid item xs={12}>
+          <Typography fontSize={18} fontWeight={600}>
+            ➡️ MY EXPERIENCE
+          </Typography>
+        </Grid>
+
+        <Experience />
+      </Grid>
+
 
       {/* About Me */}
       <Grid container marginTop={10}>
