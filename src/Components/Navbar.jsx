@@ -21,6 +21,12 @@ const Navbar = () => {
       className="navbar"
       sx={{
         zIndex: 99,
+        background: 'rgba(255, 255, 255, 0.75)',
+        borderRadius: '16px',
+        boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
+        backdropFilter: 'blur(5px)',
+        WebkitBackdropFilter: 'blur(5px)',
+        border: '1px solid rgba(255, 255, 255, 0.3)',
       }}
     >
       <a
@@ -45,6 +51,7 @@ const Navbar = () => {
         </Typography>
       </a>
       <a
+        className="navbar-item"
         href="#projects"
         style={{
           position: "relative",
@@ -83,6 +90,7 @@ const Navbar = () => {
       ></div> */}
 
       <a
+       className="navbar-item"
         href="https://www.linkedin.com/in/hasansolak/"
         target="_blank"
         style={{
@@ -113,6 +121,7 @@ const Navbar = () => {
       </a>
 
       <a
+         className="navbar-item"
         href="https://github.com/h-solak"
         target="_blank"
         style={{
@@ -141,6 +150,7 @@ const Navbar = () => {
         </Typography>
       </a>
       <a
+       className="navbar-item"
         href={Resume}
         target="_blank"
         style={{

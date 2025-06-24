@@ -5,7 +5,6 @@ import {
   Button,
   Grid,
   Link,
-  Tooltip,
   Typography,
   useMediaQuery,
 } from "@mui/material";
@@ -115,7 +114,7 @@ const Projects = () => {
                     left: isExtraXsScreen ? "0%" : "4%",
                   }}
                 >
-                  <Button variant="contained" sx={{}} startIcon={<GitHub />}>
+                  <Button variant="contained" sx={{}} startIcon={project.githubUrl ? <GitHub /> : <OpenInNewIcon />}>
                     Link
                   </Button>
                 </Link>

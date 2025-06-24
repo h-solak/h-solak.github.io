@@ -36,6 +36,7 @@ const ProjectList = [
     id: "mfs",
     title: "MFS İşgücü",
     url: "https://mfs-isgucu.com/",
+    githubUrl: false,
     image: MFSIsgucu,
     description:
       "A corporate website for an Austrian firm that supplies workforce from Turkey to Austria.",
@@ -45,6 +46,7 @@ const ProjectList = [
     id: "moviemate",
     title: "Moviemate",
     url: "https://github.com/h-solak/mis-492-project",
+    githubUrl: true,
     image: Moviemate,
     description:
       "A full-stack website that matches you with people with similar movie tastes. You can follow other people, review & rate movies, start a chat with your friends. ",
@@ -54,6 +56,7 @@ const ProjectList = [
     id: "tunemix",
     title: "Tunemix - Playlist Generator",
     url: "https://github.com/h-solak/mis-463-project",
+    githubUrl: true,
     image: Tunemix,
     description:
       "A full-stack website that generates spotify playlists for businesses such as Cafés, Bars, or Clubs. This was a school project I built with a team. It runs a Python script on the backend side. I coded frontend and backend of the website.",
@@ -63,6 +66,7 @@ const ProjectList = [
     id: "social-media",
     title: "Social Media",
     url: "https://github.com/h-solak/social-media",
+    githubUrl: true,
     image: SociableCat,
     description:
       "A social media website connected to a restful API that I built. It, surely, resembles facebook :) You can share posts, chat with people, and follow them. It also has a feed that contains friend's posts, friend suggestions, and so on...",
@@ -72,6 +76,7 @@ const ProjectList = [
     id: "notes-app",
     title: "Notes App",
     url: "https://github.com/h-solak/notesApp",
+    githubUrl: true,
     image: NotesAppProject,
     description:
       "A mobile take-a-note app that allows you to take a note, add some tasks with its calendar feature.",
@@ -81,6 +86,7 @@ const ProjectList = [
     id: "movie-finder",
     title: "Movie Finder",
     url: "https://h-solak.github.io/movie-finder/",
+    githubUrl: false,
     image: MovieProject,
     description:
       "A website that fetches data from an API and lists the movies you are searching for.",
@@ -90,6 +96,7 @@ const ProjectList = [
     id: "youtube-downloader",
     title: "Youtube Video Downloader",
     url: "https://h-solak.github.io/youtube-downloader/",
+    githubUrl: false,
     image: YoutubeDownloaderProject,
     description:
       "A website to download your favorite videos from youtube as a video or audio.",
@@ -99,6 +106,7 @@ const ProjectList = [
     id: "rain-sounds-player",
     title: "Rain Sounds Player",
     url: "https://h-solak.github.io/rain-sounds/",
+    githubUrl: false,
     image: RainSoundProject,
     description: "A website to listen to relaxing rain sounds.",
     tags: ["React.js", "CSS"],
@@ -108,6 +116,7 @@ const ProjectList = [
     id: "twitter-video-downloader",
     title: "Twitter Video Downloader",
     url: "https://h-solak.github.io/twitter-video-downloader/",
+    githubUrl: false,
     image: TwitterVideoDownloaderProject,
     description: "A website to to download any video you want from twitter.",
     tags: ["React.js", "Typescript", "CSS"],
@@ -117,6 +126,7 @@ const ProjectList = [
     id: "spotify-playlist-shuffler",
     title: "Spotify Playlist Shuffler",
     url: "https://spotify-playlist-shuffler.netlify.app",
+    githubUrl: false,
     image: SpotifyPlaylistShuffler,
     description:
       "This website uses Spotify API to shuffle user's playlists. You can't login due to Spotify not letting me use their api without limits :(",
@@ -126,6 +136,7 @@ const ProjectList = [
     id: "gpa-calculator",
     title: "GPA Calculator",
     url: "https://h-solak.github.io/gpa-calculator/",
+    githubUrl: false,
     image: GpaCalculator,
     description: "A website to easily calculate your GPA.",
     tags: ["React.js", "Css"],
@@ -134,6 +145,7 @@ const ProjectList = [
     id: "linkedin-ui-clone",
     title: "LinkedIn UI Clone",
     url: "https://h-solak.github.io/linkedin-ui-clone/",
+    githubUrl: false,
     image: LinkedinCloneProject,
     description: "Responsive clone of the actual LinkedIn website.",
     tags: ["Html", "Css", "Bootstrap"],
@@ -142,6 +154,7 @@ const ProjectList = [
   //   id: 8,
   //   title: "Instagram UI Clone",
   //   url: "https://h-solak.github.io/instagram-ui-clone/",
+  //   githubUrl: true,
   //   description:
   //     "Clone of the actual instagram website. Made with Bootstrap and it is responsive.",
   //   tags: ["HTML", "CSS", "Bootstrap"],
@@ -151,6 +164,7 @@ const ProjectList = [
   //   id: 9,
   //   title: "Google UI Clone",
   //   url: "https://h-solak.github.io/google-ui-clone/",
+  //   githubUrl: true,
   //   description: "Clone of the actual Google website. (Not responsive yet)",
   //   tags: ["HTML", "CSS", "Bootstrap"],
   // },
@@ -158,6 +172,7 @@ const ProjectList = [
   //   id: 8,
   //   title: "Color Generator",
   //   url: "https://h-solak.github.io/hex-code-generator/",
+  //   githubUrl: true,
   //   image: HexGeneratorProject,
   //   description:
   //     "My first project... This website generates random colors by using it's own hex-code generator and sets it as the background color.",
@@ -167,6 +182,7 @@ const ProjectList = [
   //     id: 9,
   //     title: "Body-Mass Index Calculator",
   //     url: "https://h-solak.github.io/body-mass-index/",
+  //     githubUrl: true,
   //     image: BmiCalculator,
   //     description:
   //       "A simple body mass index calculator. I actually built it for myself because I check my BMI everytime.",
