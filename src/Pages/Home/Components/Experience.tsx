@@ -110,7 +110,7 @@ const experienceList = [
     company: "Düğün.com",
     companyUrl: "https://www.linkedin.com/company/dugun-com",
     position: "Frontend Developer Intern",
-    date: "May 2023 - March 2023",
+    date: "May 2023 - March 2024",
     dateTooltip: "10 months",
     description: [
       "Contributed to the development of the main project and a side project.",
